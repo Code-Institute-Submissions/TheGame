@@ -2,7 +2,7 @@
 /* --------------------------------------------------color---- */
 body {
     background-color: #2176AE;
-    color: #283044;
+    color: #050000;
 }
 
 .yellow {
@@ -26,4 +26,65 @@ body {
     background-color: black;
 }
 
+.bg-footer {
+    background-color: #6A6262;
+    color: whitesmoke;
+}
+
 /* -----------------------------------------------------style */
+
+.high {
+    min-height: 80px;
+    object-fit:cover;
+}
+
+.welcome {
+    text-align: center;
+}
+
+
+/* --------------------------------------------------------- First level-- */
+
+.table {
+    height: 100%;
+    padding: 8% 10% 5%;
+    background-color: #78A1BB;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.equal-first {
+    height: 100%;    
+    border: 2px solid  black ;
+
+}
+
+/* ----------------------------------------------------------Footer  */
+
+footer {
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+i {
+    text-decoration: none;
+}
+.social i {
+    font-size: 24px;
+    color: #fafafa;
+    text-align: center;
+    padding: 15px;
+
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.social i:hover {
+    
+    color: #0A122A;
+    font-size: 30px;
+}

@@ -12,39 +12,76 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/714c36b7b0.js" crossorigin="anonymous"></script>
     <script src="assets/scripts/main.js"></script>
 </head>
 <body>
     <section class="welcome">
-        <h2 class="welcome-title">Welcome on my page!</h2>
+        <h2 class="welcome-title">Welcome on my page,</h2>
         <h3 class="less-important">I hope you will enjoy the game!</h3>
-        <div class="table">
-            <table class="table table-hover table-dark">
-                <thead>
-                    <tr class="row">
-                    <th scope="col">Choose</th>
-                    <th scope="col">Two</th>
-                    <th scope="col">Match</th>
-                    <th scope="col">Colors</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row">#</th>
-                    <td class="red ">1</td>
-                    <td class="red">2</td>
-                    <td class="blue">3</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">#</th>
-                    <td class="blue">4</td>
-                    <td class="yellow">5</td>
-                    <td class="yellow">6</td>
-                    </tr>
-                    
-                </tbody>
-            </table>
+    </section>
+    <section class="theGame">
+        <div class="sr-only"><h2>Level 1</h2></div>
+        <div class="table container-fluid">
+            <div class="row high">
+                <div class="col-sm-4 equal-first">a</div>
+                <div class="col-sm-4 equal-first">o</div>
+                <div class="col-sm-4 equal-first">e</div>
+            </div>
+            <div class="row high">
+                <div class="col-sm-4 equal-first">1</div>
+                <div class="col-sm-4 equal-first">1</div>
+                <div class="col-sm-4 equal-first">2</div>
+            </div>
+            <div class="row high">
+                <div class="col-sm-4 equal-first">3</div>
+                <div class="col-sm-4 equal-first">2</div>
+                <div class="col-sm-4 equal-first">3</div>
+            </div>
+           
+           
         </div>
     </section>
+    <select name="button" id="Complete" disabled="disabled">
+        <button type="button" class="btn btn-outline-success">Success</button>
+    </select>
+
+    <footer class="container-fluid bg-footer">
+            <div class="row">
+                <div class="col-12 col-sm-6 center">
+                    <h5 class="uppercase">About</h5>
+                    <p class="inline-block">
+                     "It's right and justice to do some stuff just for fun" said the guy in the Internet.
+                    </p>
+
+                </div>
+                <div class="col-12 col-sm-6 center">
+                    <h5 class="uppercase">My Social Media</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item social">
+                            <a target="_blank" href="https://www.facebook.com/stan.kaczorkiewicz">
+                                <i class="fab fa-facebook-square" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social">
+                            <a target="_blank" href="https://www.instagram.com/navigare_necesse_est_i_huj/">
+                                <i class="fab fa-instagram-square" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>                        
+                        </li>
+                         <li class="list-inline-item social">
+                            <a target="_blank" href="https://www.pinterest.co.uk/adriennekazovsky/">
+                                <i class="fab fa-pinterest-square" aria-hidden="true"></i>
+                                <span class="sr-only">Pinterest</span>
+                            </a>                        
+                        </li>
+                    </ul>
+                    
+
+                    
+                </div>
+            </div>
+      </footer>
 </body>
 </html>

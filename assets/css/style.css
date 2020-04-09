@@ -1,0 +1,29 @@
+
+/* --------------------------------------------------color---- */
+body {
+    background-color: #2176AE;
+    color: #283044;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.zonk {
+    color: whitesmoke;
+    background-color: black;
+}
+
+/* -----------------------------------------------------style */

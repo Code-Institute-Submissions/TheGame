@@ -13,60 +13,44 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/714c36b7b0.js" crossorigin="anonymous"></script>
-    
+    <script src="assets/scripts/main.js"></script>
 </head>
 <body>
-    <section class="welcome center">
-        <h1 class="welcome-title padding">Welcome to my page,</h1>
-        <h3 class="less-important padding-bottom">I hope you will enjoy the game!</h3>
-    </section>
-    <section class="theGame">
-        <div class="sr-only"><h2>Level 1</h2></div>
-        <div class="table bg-table container-fluid">
-            <div class="row high">
-                <div class="col-sm-4 equal-first">
-                    <button type="button" id="top_one" class="btn large">???</button>
-                </div>
-                <div class="col-sm-4 equal-first">
-                    <button type="button" id="top_two" class="btn large">???</button>
-                </div>
-                <div class="col-sm-4 equal-first">
-                    <button type="button" id="top_three" class="btn large">???</button>
-                </div>
+    
+<!------------ Contact form taken from my First Milestone Project, as the one from bootstrap did not match my needs -->
+     <section class="contact-form container-fluid bg-map">       
+        <h2 class="row">Would you like to contact us?</h2>
+         <div class="row" id="contact-form">
+            <div class="col-sm-12">
+               <p>Simply write your message here:</p> 
             </div>
-            <div class="row high">
-                <div class="col-sm-4 equal-first">
-                    <button type="button" class="btn large">???</button>
-                </div>
-                <div class="col-sm-4 equal-first">
-                    <button type="button" class="btn large">???</button>
-                </div>
-                <div class="col-sm-4 equal-first">
-                    <button type="button" class="btn large">???</button>
-                </div>
+            <div class="col-sm-12 contact-form-element">
+              
+               <form onsubmit="return sendMail(this);">
+                  <div class="form-group">
+                     <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">   
+                     <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                  <div class="form-group">   
+                     <textarea rows="5" type="text" name="contact" id="message" class="form-control" 
+                        placeholder="Your Message" required></textarea>
+                  </div>
+                  <div class="form-group">
+                     <div class="form-row text-center">
+                        <div class="col">
+                           <button type="submit" class="btn bg-drk btn-secondary" >Submit  <i class="far fa-grin-alt"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </form>
             </div>
-            <div class="row high">
-                <div class="col-sm-4 equal-first">
-                    <button type="button" class="btn large">???</button>
-                </div>
-                <div class="col-sm-4 equal-first">
-                    <button type="button" class="btn large">???</button>
-                </div>
-                <div class="col-sm-4 equal-first">
-                    <button type="button" class="btn large">???</button>
-                </div>
-            </div>
-           
-           
-        </div>
-    </section>
-    <section name="button" id="Complete" class="bg-table large center " >
-        <div class="center high padding">
-            <button type="button" id="success" onclick="return level2(this);"  class="btn btn-outline-success">Success!!</button>
-        </div>
-    </section>
+         </div>
+      </section>
 
-    <footer class="container-fluid bg-footer">
+<footer class="container-fluid bg-footer">
             <div class="row">
                 <div class="col-12 col-md-6 center">
                     <h5 class="uppercase">About</h5>
@@ -103,7 +87,5 @@
                 </div>
             </div>
       </footer>
-      <script src="assets/scripts/main.js"></script>
-      <script src="assets/scripts/level2.js"></script>
 </body>
 </html>

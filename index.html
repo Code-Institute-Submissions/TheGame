@@ -16,22 +16,35 @@
     
 </head>
 <body>
+    <nav class="navbar right wide navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">TheGame</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item  disabled nav-link" href="level2.js">level2</a>
+            <a class="nav-item nav-link" href="contact.html">Contact us</a>
+            </div>
+        </div>
+    </nav>
     <section class="welcome center">
         <h1 class="welcome-title padding">Welcome to my page,</h1>
         <h3 class="less-important padding-bottom">I hope you will enjoy the game!</h3>
     </section>
-    <section class="theGame">
+    <section class="theGame" >
         <div class="sr-only"><h2>Level 1</h2></div>
-        <div class="table bg-table container-fluid">
+        <div class="table bg-table container-fluid" >
             <div class="row high">
-                <div class="col-sm-4 equal-first">
-                    <button type="button" id="top_one" class="btn large">???</button>
+                <div class="col-sm-4 toRed equal-first" onclick="return Game(this)">
+                   <button type="button" id="top_one" class="btn large">???</button>
                 </div>
-                <div class="col-sm-4 equal-first">
-                    <button type="button" id="top_two" class="btn large">???</button>
+                <div class="col-sm-4 toRed equal-first" id="top_two">
+                    <button type="button"  class="btn large">???</button>
                 </div>
-                <div class="col-sm-4 equal-first">
-                    <button type="button" id="top_three" class="btn large">???</button>
+                <div class="col-sm-4 equal-first"  id="top_three">
+                    <button type="button" class="btn large">???</button>
                 </div>
             </div>
             <div class="row high">

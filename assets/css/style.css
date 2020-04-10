@@ -11,6 +11,7 @@ body {
 
 .red {
     background-color: red;
+    color: red;
 }
 
 .blue {
@@ -33,6 +34,11 @@ body {
 
 .bg-table {
     background-color: #78A1BB;
+    color: whitesmoke;
+}
+
+.bg-drk {
+    background-color: #283044 ;
     color: whitesmoke;
 }
 /* -----------------------------------------------------style */
@@ -68,6 +74,14 @@ body {
 .large {
     height: 100%;
     width: 100%;
+}
+
+.wide {
+    width: 100%;
+}
+
+.right {
+   text-align: right;
 }
 /* --------------------------------------------------------- First level-- */
 

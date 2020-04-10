@@ -1,16 +1,22 @@
-$( document ).ready(function() {
-    
-    $("button").click(function(event) {
-        
-        function handler( event ) {
-        
-            var target = $( event.target );
-            if ( target.is( "top_one" ) ) {
-                $("top_one").toggle(addClass("red"), removeClass("red"));
 
+   $(document).ready(function(){
+
+        $("#top_two").on("click", function(){
+            $("#top_two").remove("button").addClass("red");
+     
+        })
+        
+  
+
+ }) 
+
+   function Game(click){
+        
+        if (".red" == false){
+            addClass("red");
+        }else if (".red" == false){
+            removeClass("red");
+        } else {
+            console.log("Try harder Stan!")
         }
-    };
-   
-    })
-
-}())
+    }

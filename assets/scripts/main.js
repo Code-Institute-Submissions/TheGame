@@ -4,25 +4,28 @@
         // $("#top_two").on("click", function(){
         //     $("#top_two").remove("button").toggleClass("red");     
         // })
-
+     
         $(".toRed").on("click", function(){
-            $(this).toggleClass("red");     
+            $(this).toggleClass("red").toggleClass("selected");     
         })
-         if("#top_two"+ ".red"==true && "#top_one"+ ".red"==true){
-             $(this).slideUp();
-         }
+        
         
           $(".toBlue").on("click", function(){
-            $(this).toggleClass("blue");     
+            $(this).toggleClass("blue").toggleClass("selected");     
         })
 
          $(".toGreen").on("click", function(){
-            $(this).toggleClass("green");     
+            $(this).toggleClass("green").toggleClass("selected");      
         })
 
          $(".toZonk").on("click", function(){
-            $(this).toggleClass("zonk").innerHTML("nothing");     
+            $(this).toggleClass("zonk").innerHTML("<p>nothing's here</p>");     
         })
+    
+
+      
+
+        
  }) 
 
 //    function Game(click){

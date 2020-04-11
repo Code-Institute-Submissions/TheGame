@@ -1,8 +1,8 @@
 
 /* --------------------------------------------------color---- */
 body {
-    background-color: rgb(188, 224, 248);
-    color: #050000;
+    background-color: #bce0f8;
+    color: black;
 }
 
 .yellow {
@@ -32,12 +32,12 @@ body {
 }
 
 .bg-footer {
-    background-color: #6A6262;
+    background-color: #507DBC;
     color: whitesmoke;
 }
 
 .bg-table {
-    background-color: #78A1BB;
+    background-color: #FBF5F3;
     color: whitesmoke;
 }
 
@@ -52,7 +52,9 @@ body {
     object-fit:cover;
 }
 
-
+footer {
+    padding-top: 5%;
+}
 
 .right {
     float: right;
@@ -130,4 +132,11 @@ i {
     
     color: #0A122A;
     font-size: 30px;
+}
+
+/* ----------------------------------------------------------Contact  */
+
+.contact-form {
+    padding: 10%;
+    max-width: 80%;
 }

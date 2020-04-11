@@ -29,7 +29,7 @@
             </div>
         </div>
     </nav>
-    <section class="welcome center">
+    <section class="welcome  center">
         <h1 class="welcome-title padding">Welcome to my page,</h1>
         <h3 class="less-important padding-bottom">I hope you will enjoy the game!</h3>
     </section>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="row high">
-                <div class="col-sm-4 equal-first">
+                <div class="col-sm-4 toGreen equal-first">
                     <button type="button" class="btn large">???</button>
                 </div>
                 <div class="col-sm-4 equal-first">
@@ -119,5 +119,10 @@
       </footer>
       <script src="assets/scripts/main.js"></script>
       <script src="assets/scripts/level2.js"></script>
+      <script>
+          if ($(".selected")length === 2){
+            $(this).removeClass("red")
+        }
+      </script>
 </body>
 </html>

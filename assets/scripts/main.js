@@ -1,29 +1,31 @@
 
    $(document).ready(function(){
 
-        // $("#top_two").on("click", function(){
-        //     $("#top_two").remove("button").toggleClass("red");     
-        // })
+       
+      
      
         $(".toRed").on("click", function(){
-            $(this).toggleClass("red").toggleClass("selected");     
+            $(this).toggleClass("red selected");     
         })
         
         
           $(".toBlue").on("click", function(){
-            $(this).toggleClass("blue").toggleClass("selected");     
+            $(this).toggleClass("blue selected");     
         })
 
          $(".toGreen").on("click", function(){
-            $(this).toggleClass("green").toggleClass("selected");      
+            $(this).toggleClass("green selected");      
+        })
+
+         $(".toOrange").on("click", function(){
+            $(this).toggleClass("orange selected");      
         })
 
          $(".toZonk").on("click", function(){
-            $(this).toggleClass("zonk").innerHTML("<p>nothing's here</p>");     
+            $(this).toggleClass("zonk").text("nothing's here");     
         })
     
-
-      
+       
 
         
  }) 

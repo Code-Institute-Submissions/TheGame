@@ -54,6 +54,21 @@ body {
     background-color: #283044 ;
     color: whitesmoke;
 }
+
+.wiped {
+    
+    opacity: 0;
+}
+
+.unwiped{
+   animation: wipe 1s linear ;
+}
+
+@keyframes wipe {
+  0%   { opacity: 1; }  
+  100% { opacity: 0; }
+}
+
 /* -----------------------------------------------------style */
 
 .high {

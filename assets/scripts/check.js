@@ -3,7 +3,7 @@
 
     console.log("here am I, did you call me?")
 
-    // let pair = $(".selected");               
+     let pair = $(".selected");               
            
                 if($(".selected").length === 2) {
                  

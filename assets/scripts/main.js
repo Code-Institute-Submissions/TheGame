@@ -1,6 +1,7 @@
 
    $(document).ready(function(){       
       
+    console.log("I am working")
      
         $(".toRed").on("click", function(){
              $(this).toggleClass("red selected")
@@ -48,19 +49,43 @@
         })
 
          $(".toZonk").on("click", function(){
-            $(this).toggleClass("zonk").text("nothing's here");     
+            $(this).toggleClass("zonk").text("nothing's here")
+            $(this).delay(2000).addClass("unwiped")    
+            $(this).delay(1000).addClass("wiped")
         })
 
+    
+
          $(".toWhite").on("click", function(){
-            $(this).toggleClass("white selected");      
+            $(this).toggleClass("white selected")
+
+               if (($("#toWhite1").hasClass("white")) && ($("#toWhite2").hasClass("white"))){
+
+                $(".white").addClass("unwiped")
+                $(".white").delay(800).addClass("wiped") 
+            };        
         })
 
          $(".toYellow").on("click", function(){
-            $(this).toggleClass("yellow selected");      
+            $(this).toggleClass("yellow selected")
+            
+               if (($("#toYellow1").hasClass("yellow")) && ($("#toYellow2").hasClass("yellow"))){
+
+                $(".yellow").addClass("unwiped")
+                $(".yellow").delay(800).addClass("wiped") 
+            };  
         })
 
          $(".toGrey").on("click", function(){
-            $(this).toggleClass("grey selected");      
+            $(this).toggleClass("grey selected")
+            
+               if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))){
+
+                $(".grey").addClass("unwiped")
+                $(".grey").delay(800).addClass("wiped") 
+            };  
+
+
         })
        
 

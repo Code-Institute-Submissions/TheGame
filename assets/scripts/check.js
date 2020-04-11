@@ -1,20 +1,22 @@
    
-
+   $(document).ready(function(){   
 
     console.log("here am I, did you call me?")
 
-     let pair = $(".selected");               
+                      if(((".selected")*9) == true){
+                    
+                    // $("#theGame").addClass(disabled)
+                    $("#Complete").removeClass(disabled);
+                } 
            
-                if($(".selected").length === 2) {
+                if($(".selected").length == [2]) {
                  
-                    $(".selected").removeClass("red blue orange green");
-                }
-                // else if ((pair[0]).className  === (pair[1]).className) {
-                // pair.fadeOut();         
-                // } 
+                    $(".selected").removeClass("red blue ")
+                };
 
+                
 
                
             
 
-
+            })

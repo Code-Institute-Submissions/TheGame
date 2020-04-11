@@ -1,7 +1,5 @@
 
-   $(document).ready(function(){
-
-       
+   $(document).ready(function(){       
       
      
         $(".toRed").on("click", function(){
@@ -13,8 +11,14 @@
             $(this).toggleClass("blue selected");     
         })
 
-         $(".toGreen").on("click", function(){
-            $(this).toggleClass("green selected");      
+         $(".toGreen .toGreen2").on("click", function(){
+            // $(this).toggleClass("green selected");  
+           $(this).toggleClass("green");
+
+            if($(".toGreen").hasClass("green")&& (".toGreen2").hasClass("green")){
+
+                $(".green").fadeOut;
+            } 
         })
 
          $(".toOrange").on("click", function(){

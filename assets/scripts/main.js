@@ -30,7 +30,18 @@
          $(".toZonk").on("click", function(){
             $(this).toggleClass("zonk").text("nothing's here");     
         })
-    
+
+         $(".toWhite").on("click", function(){
+            $(this).toggleClass("white selected");      
+        })
+
+         $(".toYellow").on("click", function(){
+            $(this).toggleClass("yellow selected");      
+        })
+
+         $(".toGrey").on("click", function(){
+            $(this).toggleClass("grey selected");      
+        })
        
 
         

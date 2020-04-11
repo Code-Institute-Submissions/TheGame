@@ -11,15 +11,17 @@
             $(this).toggleClass("blue selected");     
         })
 
-         $(".toGreen .toGreen2").on("click", function(){
-            // $(this).toggleClass("green selected");  
-           $(this).toggleClass("green");
+         $(".toGreen").on("click", function(){
+            
+           $(this).toggleClass("green selected")
 
-            if($(".toGreen").hasClass("green")&& (".toGreen2").hasClass("green")){
+            if (($("#toGreen1").hasClass("green")) && ($("#toGreen2").hasClass("green"))){
 
-                $(".green").fadeOut;
-            } 
+                $(".green").fadeOut(slow, linear).console.log("nothing")
+            };
+            
         })
+
 
          $(".toOrange").on("click", function(){
             $(this).toggleClass("orange selected");      

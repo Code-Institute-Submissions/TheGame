@@ -1,22 +1,30 @@
    
    $(document).ready(function(){   
 
-    console.log("here am I, did you call me?")
+    function toCheck(theGame){
 
-                      if(((".selected")*9) == true){
-                    
-                    // $("#theGame").addClass(disabled)
-                    $("#Complete").removeClass(disabled);
-                } 
+                var selected = $(".selected").length;
+                var red = $(".red").length;
            
-                if($(".selected").length == [2]) {
+                if((selected === 2)&&(red !== 2)) {
                  
-                    $(".selected").removeClass("red blue ")
+                    $(".selected").removeClass("red")
                 };
 
+                 var wiped = $(".wiped").length
+
+               if(wiped === 9){
+                    
+                    $("#theGame").addClass(disabled)
+                    $("#Complete").removeClass(disabled);
+                } ;
+
+               return toCheck;
+            };
+
                 
-
+console.log("here am I, did you call me?");
                
-            
+           })     
 
-            })
+        

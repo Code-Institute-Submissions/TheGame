@@ -1,7 +1,7 @@
 
    $(document).ready(function(){       
       
-    console.log("I am working")
+  
      
         $(".toRed").on("click", function(){
              $(this).toggleClass("red selected")
@@ -49,7 +49,7 @@
         })
 
          $(".toZonk").on("click", function(){
-            $(this).toggleClass("zonk").text("nothing's here")
+            $(this).toggleClass("zonk selected").text("nothing's here")
             $(this).delay(2000).addClass("unwiped")    
             $(this).delay(1000).addClass("wiped")
         })
@@ -78,15 +78,28 @@
 
          $(".toGrey").on("click", function(){
             $(this).toggleClass("grey selected")
-            
+          
                if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))){
 
                 $(".grey").addClass("unwiped")
                 $(".grey").delay(800).addClass("wiped") 
-            };  
+            } 
+                // else if(((".selected").length==2)&&((".grey").length<=2)){
+                //     $(".selected").addClass("unwiped")
+                //     $(".selected").delay(800).removeClass("selected grey")
+                // }
+            // else if (($("#toGrey1").hasClass("grey")) || ($("#toGrey2").hasClass("grey"))&&($(".selected").length==2)){
 
+            //     $(this).delay(800).toggleClass("grey selected")
+            // } 
+            // else {
+            //     $(this).toggleClass("grey selected")
+            // }
+            
 
-        })
+        });
+
+        
        
 
         

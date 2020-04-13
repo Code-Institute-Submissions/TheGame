@@ -11,4 +11,15 @@
            
         
 
- return false; }
+ return false; };
+
+        
+    function theEnd(success){
+    
+
+        
+        alert("That was Amazing! Congratulations, you just finished the game!")
+              
+        
+        location.replace("index.html")
+    };

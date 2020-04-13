@@ -11,7 +11,8 @@
                 $(".red").addClass("unwiped")
                 $(".red").delay(800).addClass("wiped") 
             };  
-        })
+             return toCheck(selected, wiped);
+        });
         
         
           $(".toBlue").on("click", function(){
@@ -23,7 +24,8 @@
                 $(".blue").addClass("unwiped")
                 $(".blue").delay(800).addClass("wiped") 
             };    
-        })
+             return toCheck(this);
+        });
 
          $(".toGreen").on("click", function(){
             
@@ -35,7 +37,8 @@
                $(".green").delay(800).addClass("wiped") 
             };
             
-        })
+             return toCheck;
+        });
 
 
          $(".toOrange").on("click", function(){
@@ -45,14 +48,16 @@
 
                 $(".orange").addClass("unwiped")
                 $(".orange").delay(800).addClass("wiped") 
-            };        
-        })
+            };     
+             return toCheck;   
+        });
 
          $(".toZonk").on("click", function(){
             $(this).toggleClass("zonk selected").text("nothing's here")
             $(this).delay(2000).addClass("unwiped")    
             $(this).delay(1000).addClass("wiped")
-        })
+             return toCheck;
+        });
 
     
 
@@ -63,8 +68,10 @@
 
                 $(".white").addClass("unwiped")
                 $(".white").delay(800).addClass("wiped") 
-            };        
-        })
+            };     
+               return toCheck;
+
+        });
 
          $(".toYellow").on("click", function(){
             $(this).toggleClass("yellow selected")
@@ -74,7 +81,9 @@
                 $(".yellow").addClass("unwiped")
                 $(".yellow").delay(800).addClass("wiped") 
             };  
-        })
+             return toCheck;
+        });
+
 
          $(".toGrey").on("click", function(){
             $(this).toggleClass("grey selected")
@@ -83,7 +92,7 @@
 
                 $(".grey").addClass("unwiped")
                 $(".grey").delay(800).addClass("wiped") 
-            } 
+            } ;
                 // else if(((".selected").length==2)&&((".grey").length<=2)){
                 //     $(".selected").addClass("unwiped")
                 //     $(".selected").delay(800).removeClass("selected grey")
@@ -95,7 +104,7 @@
             // else {
             //     $(this).toggleClass("grey selected")
             // }
-            
+             return toCheck(this);
 
         });
 

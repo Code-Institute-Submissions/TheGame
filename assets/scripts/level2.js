@@ -1,10 +1,4 @@
 
-
-    
-    
-    
-    
-    
     function level2(success){
     
 

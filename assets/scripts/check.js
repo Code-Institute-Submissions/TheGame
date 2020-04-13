@@ -1,25 +1,26 @@
    
    $(document).ready(function(){   
 
-    function toCheck(theGame){
+    function toCheck(selected, wiped){
 
                 var selected = $(".selected").length;
                 var red = $(".red").length;
            
-                if((selected === 2)&&(red !== 2)) {
+                if((selected == 2)&&(red !== 2)) {
                  
                     $(".selected").removeClass("red")
                 };
 
                  var wiped = $(".wiped").length
 
-               if(wiped === 9){
+               if(wiped == 9){
                     
-                    $("#theGame").addClass(disabled)
+                    // $("#theGame").addClass(disabled)
                     $("#Complete").removeClass(disabled);
+                    console.log("Why it does not work?")
                 } ;
 
-               return toCheck;
+               
             };
 
                 

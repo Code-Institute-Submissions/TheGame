@@ -10,8 +10,7 @@
         location.replace("level3.html")
            
         
-
- return false; };
+ };
 
         
     function theEnd(success){

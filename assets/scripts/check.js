@@ -1,31 +1,39 @@
    
-   $(document).ready(function(){   
+//    $(document).ready(function(){   
 
-    function toCheck(selected, wiped){
+//     function toCheck(selected, wiped){
 
-                var selected = $(".selected").length;
-                var red = $(".red").length;
+//                 var selected = $(".selected").length;
+//                 var red = $(".red").length;
            
-                if((selected == 2)&&(red !== 2)) {
-                 
-                    $(".selected").removeClass("red")
-                };
+//                                 // if((selected == 2)&&(red !== 2)) {
+                                
+//                                 //     $(".selected").removeClass("red selected")
+//                                 // };
 
-                 var wiped = $(".wiped").length
+//                 do{
+//                     $(".selected").removeClasses(" blue red")
+//                 }
+//                 while((selected == 2)&&(red != 2));
 
-               if(wiped == 9){
+//                  return toCheck()
+//             };
+    
+    // function Check2() {
+    //              var wiped = $(".wiped").length
+
+
+    //            if(wiped == 9){
                     
-                    // $("#theGame").addClass(disabled)
-                    $("#Complete").removeClass(disabled);
-                    console.log("Why it does not work?")
-                } ;
+    //                 // $("#theGame").addClass(disabled)
+    //                 $("#Complete").removeClass(".disabled");
+    //                 console.log("Why it does not work?")
+    //             } ;
 
-               
-            };
+    //            return Check2()
+    //         };
 
                 
-console.log("here am I, did you call me?");
+// console.log("here am I, did you call me?");
                
-           })     
-
-        
+//            })     

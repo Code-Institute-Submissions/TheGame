@@ -11,7 +11,7 @@
                 $(".red").addClass("unwiped")
                 $(".red").delay(800).addClass("wiped") 
             };  
-             return toCheck(selected, wiped);
+             return toCheck();
         });
         
         
@@ -24,7 +24,7 @@
                 $(".blue").addClass("unwiped")
                 $(".blue").delay(800).addClass("wiped") 
             };    
-             return toCheck(this);
+             return toCheck();
         });
 
          $(".toGreen").on("click", function(){
@@ -37,7 +37,7 @@
                $(".green").delay(800).addClass("wiped") 
             };
             
-             return toCheck;
+             return toCheck();
         });
 
 
@@ -49,14 +49,14 @@
                 $(".orange").addClass("unwiped")
                 $(".orange").delay(800).addClass("wiped") 
             };     
-             return toCheck;   
+             return toCheck();   
         });
 
          $(".toZonk").on("click", function(){
             $(this).toggleClass("zonk selected").text("nothing's here")
             $(this).delay(2000).addClass("unwiped")    
             $(this).delay(1000).addClass("wiped")
-             return toCheck;
+             return toCheck();
         });
 
     
@@ -69,7 +69,7 @@
                 $(".white").addClass("unwiped")
                 $(".white").delay(800).addClass("wiped") 
             };     
-               return toCheck;
+               return toCheck();
 
         });
 
@@ -81,7 +81,7 @@
                 $(".yellow").addClass("unwiped")
                 $(".yellow").delay(800).addClass("wiped") 
             };  
-             return toCheck;
+             return toCheck();
         });
 
 
@@ -104,11 +104,33 @@
             // else {
             //     $(this).toggleClass("grey selected")
             // }
-             return toCheck(this);
+             return toCheck();
 
         });
 
-        
+         function toCheck(selected, wiped){
+
+                var selected = $(".selected").length;
+                var color = $(".red .blue .green .yellow .white .orange .grey ").length;
+           
+                 if((selected == 2)&&(color  != 2)) {
+                    setTimeout(function(){
+                         $(".selected").removeClass("red blue green yellow white orange grey selected")
+                    },500); 
+                   
+                };
+
+                 var wiped = $(".wiped").length
+
+               if(wiped == 9){
+                    
+                    $("#theGame").addClass("disabled")
+                    $("#Complete").removeClass("disabled");
+
+                    
+                } ;
+            }
+            console.log("Why it does not work?")
        
 
         

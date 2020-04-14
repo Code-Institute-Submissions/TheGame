@@ -93,17 +93,7 @@
                 $(".grey").addClass("unwiped")
                 $(".grey").delay(800).addClass("wiped") 
             } ;
-                // else if(((".selected").length==2)&&((".grey").length<=2)){
-                //     $(".selected").addClass("unwiped")
-                //     $(".selected").delay(800).removeClass("selected grey")
-                // }
-            // else if (($("#toGrey1").hasClass("grey")) || ($("#toGrey2").hasClass("grey"))&&($(".selected").length==2)){
-
-            //     $(this).delay(800).toggleClass("grey selected")
-            // } 
-            // else {
-            //     $(this).toggleClass("grey selected")
-            // }
+             
              return toCheck();
 
         });
@@ -116,17 +106,17 @@
                  if((selected == 2)&&(color  != 2)) {
                     setTimeout(function(){
                          $(".selected").removeClass("red blue green yellow white orange grey selected")
-                    },500); 
+                    },400); 
                    
                 };
 
                  var wiped = $(".wiped").length
 
-               if(wiped == 9){
-                    
-                    $("#theGame").addClass("disabled")
-                    $("#Complete").removeClass("disabled");
-
+                if(wiped == 9){
+                    setTimeout(function(){
+                        $("#theGame").addClass("disabled")
+                        $("#Complete").removeClass("disabled");
+                    },700); 
                     
                 } ;
             }

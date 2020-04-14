@@ -41,7 +41,6 @@
         <div class="table bg-table container-fluid" >
             <div class="row high">
                 <div class="col-sm-4 toRed equal-first" id="toRed1">
-                 <!-- onclick="return Game(this)" -->
                    <button type="button"  class="btn large">???</button>
                 </div>
                 <div class="col-sm-4 toRed equal-first" id="toRed2">
@@ -77,12 +76,13 @@
            
         </div>
     </section>
-    <section name="button" id="Complete" class="bg-table disabled large center " >
+    <section  id="Complete" class="bg-table disabled large center " >
+        <h2 class="sr-only">Success Button</h2>
         <div class="center high padding">
             <button type="button" id="success" onclick="return level2(this);"  class="btn bg-drk">You did it! :)</button>
         </div>
     </section>
-<!-- --------------------While doing the footer, I was inspired by the course materials, the "Rosie Odenkirk" mini project  -->
+<!-- While doing the footer, I was inspired by the course materials, the "Rosie Odenkirk" mini project  -->
     <footer class="container-fluid bg-footer">
             <div class="row">
                 <div class="col-12 col-md-6 center">
@@ -124,11 +124,6 @@
       </footer>
       <script src="assets/scripts/main.js"></script>
       <script src="assets/scripts/level2.js"></script>
-      <script src="assets/scripts/check.js"></script>
-      <script>
-        //   if ($(".red")length === 2){
-        //     $(this).fadeOut();
-        // }
-      </script>
+      
 </body>
 </html>

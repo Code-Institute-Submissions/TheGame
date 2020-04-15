@@ -114,6 +114,7 @@
 
                if(wiped == 15){
                     setTimeout(function(){
+                        $("#welcome").addClass("disabled")
                         $("#theGame").addClass("disabled")
                         $("#Complete").removeClass("disabled");
                     },700); 

@@ -57,13 +57,29 @@ body {
     color: whitesmoke;
 }
 
+.dark {
+     background-color: #283044 ;
+}
+
+.black {
+    background-color: black;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.light {
+    background-color:chartreuse;
+}
+
 .wiped {
     
     opacity: 0;
 }
 
 .unwiped{
-   animation: wipe 1s linear ;
+   animation: wipe 0.7s linear ;
 }
 
 @keyframes wipe {

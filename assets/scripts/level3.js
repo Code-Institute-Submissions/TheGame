@@ -17,7 +17,7 @@
     
 
         
-        alert("That was Amazing! Congratulations, you just finished the game!")
+        alert(" Congratulations, you just finished the game!")
               
         
         location.replace("index.html")

@@ -54,7 +54,7 @@
 
          $(".toZonk").on("click", function(){
             $(this).toggleClass("zonk selected").text("nothing's here")
-            $(this).delay(2000).addClass("unwiped")    
+            $(this).delay(3000).addClass("unwiped")    
             $(this).delay(1000).addClass("wiped")
              return toCheck();
         });
@@ -114,6 +114,7 @@
 
                 if(wiped == 9){
                     setTimeout(function(){
+
                         $("#welcome").addClass("disabled")
                         $("#theGame").addClass("disabled")
                         $("#Complete").removeClass("disabled");
@@ -121,8 +122,7 @@
                     
                 } ;
             }
-            console.log("Why it does not work?")
-       
+          
 
         
  }) 

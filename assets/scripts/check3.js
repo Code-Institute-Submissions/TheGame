@@ -1,22 +1,23 @@
 $(document).ready(function(){     
 
-    var selected = ".selected"
+    var selected = ".selected".length;
+    var clr  = ".red .blue .yellow .white".length;
 
+    
         $(".toRed").on("click", function(){
-            var red = ".red";
-
-            $(this).toggleClass("red selected")
-
-            if((red.length == 1)&&(selected.length ==1)){
-
-                console.log("here I am");
             
-            }else if ((red.length == 1)&&(selected.length == 2)) {
+            $.when(
+
+             $(this).toggleClass("red selected")
+
+            ).then( function check(){
+
+         if ((clr != 2)&&(selected == 2)) {
                 
                  setTimeout(function(){
                          $(".selected").removeClass("red blue green yellow white orange grey selected")
                     },800); 
-            } else if((red.length == 2)&&(selected.length == 2)){
+            } else if((clr == 2)&&(selected == 2)){
                  setTimeout(function(){
                          
                      $(".red").addClass("unwiped")
@@ -24,7 +25,8 @@ $(document).ready(function(){
                     },1000); 
             } else {
                 console.log("Think more Stan!");
-            }
+            };
+        })
 
         });
 

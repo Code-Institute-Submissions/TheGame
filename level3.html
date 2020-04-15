@@ -37,7 +37,7 @@
         <h1 class="welcome-title padding">Level Three </h1>
         <h3 class="less-important padding-bottom">(It means you rock!)</h3>
     </section>
-    <section class="theGame">
+    <section id="theGame">
         <div class="sr-only"><h2>Level 1</h2></div>
         <div class="table bg-table container-fluid">
             <div class="row high">
@@ -131,8 +131,11 @@
            
         </div>
     </section>
-   <section name="button" id="Complete" class="bg-table large center " >
+   <section name="button" id="Complete" class="bg-table disabled large center " >
         <div class="center high padding">
+            <div class="center padding ">
+            <h1 class="center space">Thank you for playing. <br> That's it so far. I hope you enjoyed TheGame.</h1>
+            </div>
             <button type="button" id="success" onclick="return theEnd(this);"  class="btn bg-drk">Success!!</button>
         </div>
     </section>

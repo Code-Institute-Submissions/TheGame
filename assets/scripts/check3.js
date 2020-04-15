@@ -198,11 +198,11 @@ $(document).ready(function(){
          function toCheck(selected, wiped){
 
                 var selected = $(".selected").length;
-                var color = $(".red .blue .green .yellow .white .orange .grey ").length;
+                var color = $(".red .blue .green .yellow .white .orange .grey .dark .light .smth .black .pink ").length;
            
                  if((selected == 2)&&(color  != 2)) {
                     setTimeout(function(){
-                         $(".selected").removeClass("red blue green yellow white orange grey selected")
+                         $(".selected").removeClass("red blue green yellow white orange grey dark light smth black pink selected")
                     },400); 
                    
                 };
@@ -218,8 +218,7 @@ $(document).ready(function(){
                     
                 } ;
             }
-            console.log("Why it does not work?")
-       
+           
 
         
  }) 

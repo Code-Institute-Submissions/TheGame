@@ -135,6 +135,16 @@ footer {
 .right {
    text-align: right;
 }
+
+#success {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.space {
+    letter-spacing: 2px;
+}
+
 /* --------------------------------------------------------- First level-- */
 
 .table {
@@ -186,3 +196,4 @@ i {
     padding: 10%;
     max-width: 80%;
 }
+

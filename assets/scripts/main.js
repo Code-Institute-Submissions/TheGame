@@ -4,7 +4,7 @@
   
      
         $(".toRed").on("click", function(){
-             $(this).toggleClass("red selected")
+             $(this).toggleClass("red selected").text(" ")
 
               if (($("#toRed1").hasClass("red")) && ($("#toRed2").hasClass("red"))){
 
@@ -17,7 +17,7 @@
         
           $(".toBlue").on("click", function(){
 
-            $(this).toggleClass("blue selected")
+            $(this).toggleClass("blue selected").text(" ")
 
               if (($("#toBlue1").hasClass("blue")) && ($("#toBlue2").hasClass("blue"))){
 
@@ -29,7 +29,7 @@
 
          $(".toGreen").on("click", function(){
             
-           $(this).toggleClass("green selected").delay(1000)
+           $(this).toggleClass("green selected").text(" ")
 
             if (($("#toGreen1").hasClass("green")) && ($("#toGreen2").hasClass("green"))){
 
@@ -42,7 +42,7 @@
 
 
          $(".toOrange").on("click", function(){
-             $(this).toggleClass("orange selected")
+             $(this).toggleClass("orange selected").text(" ")
 
               if (($("#toOrange1").hasClass("orange")) && ($("#toOrange2").hasClass("orange"))){
 
@@ -61,42 +61,43 @@
 
     
 
-         $(".toWhite").on("click", function(){
-            $(this).toggleClass("white selected")
+        //  $(".toWhite").on("click", function(){
+        //     $(this).toggleClass("white selected").text(" ")
 
-               if (($("#toWhite1").hasClass("white")) && ($("#toWhite2").hasClass("white"))){
+        //        if (($("#toWhite1").hasClass("white")) && ($("#toWhite2").hasClass("white"))){
 
-                $(".white").addClass("unwiped")
-                $(".white").delay(800).addClass("wiped") 
-            };     
-               return toCheck();
+        //         $(".white").addClass("unwiped")
+        //         $(".white").delay(800).addClass("wiped") 
+        //     };     
+        //        return toCheck();
 
-        });
+        // });
 
-         $(".toYellow").on("click", function(){
-            $(this).toggleClass("yellow selected")
+        //  $(".toYellow").on("click", function(){
+        //     $(this).toggleClass("yellow selected").text(" ")
             
-               if (($("#toYellow1").hasClass("yellow")) && ($("#toYellow2").hasClass("yellow"))){
+        //        if (($("#toYellow1").hasClass("yellow")) && ($("#toYellow2").hasClass("yellow"))){
 
-                $(".yellow").addClass("unwiped")
-                $(".yellow").delay(800).addClass("wiped") 
-            };  
-             return toCheck();
-        });
+        //         $(".yellow").addClass("unwiped")
+        //         $(".yellow").delay(800).addClass("wiped") 
+        //     };  
+        //      return toCheck();
+        // });
 
 
-         $(".toGrey").on("click", function(){
-            $(this).toggleClass("grey selected")
+        //  $(".toGrey").on("click", function(){
+        //     $(this).toggleClass("grey selected")
           
-               if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))){
+        //        if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))){
 
-                $(".grey").addClass("unwiped")
-                $(".grey").delay(800).addClass("wiped") 
-            } ;
+        //         $(".grey").addClass("unwiped")
+        //         $(".grey").delay(800).addClass("wiped") 
+        //         $(".grey").delay(500).addClass("disabled")
+        //     } ;
              
-             return toCheck();
+        //      return toCheck();
 
-        });
+        // });
 
          function toCheck(selected, wiped){
 

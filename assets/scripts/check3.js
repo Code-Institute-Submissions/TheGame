@@ -37,7 +37,7 @@ $(document).ready(function(){
 
      
         $(".toRed").on("click", function(){
-             $(this).toggleClass("red selected")
+             $(this).toggleClass("red selected").text(" ")
 
               if (($("#toRed1").hasClass("red")) && ($("#toRed2").hasClass("red"))){
 
@@ -50,7 +50,7 @@ $(document).ready(function(){
         
           $(".toBlue").on("click", function(){
 
-            $(this).toggleClass("blue selected")
+            $(this).toggleClass("blue selected").text(" ")
 
               if (($("#toBlue1").hasClass("blue")) && ($("#toBlue2").hasClass("blue"))){
 
@@ -62,7 +62,7 @@ $(document).ready(function(){
 
          $(".toGreen").on("click", function(){
             
-           $(this).toggleClass("green selected").delay(1000)
+           $(this).toggleClass("green selected").text(" ")
 
             if (($("#toGreen1").hasClass("green")) && ($("#toGreen2").hasClass("green"))){
 
@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 
          $(".toOrange").on("click", function(){
-             $(this).toggleClass("orange selected")
+             $(this).toggleClass("orange selected").text(" ")
 
               if (($("#toOrange1").hasClass("orange")) && ($("#toOrange2").hasClass("orange"))){
 
@@ -95,7 +95,7 @@ $(document).ready(function(){
     
 
          $(".toWhite").on("click", function(){
-            $(this).toggleClass("white selected")
+            $(this).toggleClass("white selected").text(" ")
 
                if (($("#toWhite1").hasClass("white")) && ($("#toWhite2").hasClass("white"))){
 
@@ -107,7 +107,7 @@ $(document).ready(function(){
         });
 
          $(".toYellow").on("click", function(){
-            $(this).toggleClass("yellow selected")
+            $(this).toggleClass("yellow selected").text(" ")
             
                if (($("#toYellow1").hasClass("yellow")) && ($("#toYellow2").hasClass("yellow"))){
 
@@ -119,7 +119,7 @@ $(document).ready(function(){
 
 
          $(".toGrey").on("click", function(){
-            $(this).toggleClass("grey selected")
+            $(this).toggleClass("grey selected").text(" ")
           
                if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))){
 
@@ -132,7 +132,7 @@ $(document).ready(function(){
         });
 
          $(".toDark").on("click", function(){
-            $(this).toggleClass("dark selected")
+            $(this).toggleClass("dark selected").text(" ")
             
                if (($("#toDark1").hasClass("dark")) && ($("#toDark2").hasClass("dark"))){
 
@@ -144,7 +144,7 @@ $(document).ready(function(){
 
 
          $(".toBlack").on("click", function(){
-            $(this).toggleClass("black selected")
+            $(this).toggleClass("black selected").text(" ")
           
                if (($("#toBlack1").hasClass("black")) && ($("#toBlack2").hasClass("black"))){
 
@@ -157,7 +157,7 @@ $(document).ready(function(){
         });
 
          $(".toPink").on("click", function(){
-            $(this).toggleClass("pink selected")
+            $(this).toggleClass("pink selected").text(" ")
             
                if (($("#toPink1").hasClass("pink")) && ($("#toPink2").hasClass("pink"))){
 
@@ -169,7 +169,7 @@ $(document).ready(function(){
 
 
          $(".toLight").on("click", function(){
-            $(this).toggleClass("light selected")
+            $(this).toggleClass("light selected").text(" ")
           
                if (($("#toLight1").hasClass("light")) && ($("#toLight2").hasClass("light"))){
 
@@ -182,7 +182,7 @@ $(document).ready(function(){
         });
 
            $(".toSmth").on("click", function(){
-            $(this).toggleClass("smth selected")
+            $(this).toggleClass("smth selected").text(" ")
           
                if (($("#toSmth1").hasClass("smth")) && ($("#toSmth2").hasClass("smth"))){
 

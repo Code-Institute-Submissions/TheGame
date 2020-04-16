@@ -22,3 +22,12 @@
         
         location.replace("index.html")
     };
+
+    function fail(fail) {
+        
+        alert(" Oh no, I hope this will make you happy")
+              
+        
+        location.replace("https://www.youtube.com/watch?v=NmPQNvbXyic")
+
+    };

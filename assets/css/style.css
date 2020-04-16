@@ -9,6 +9,7 @@ body {
 
 .yellow {
     background-color: yellow;
+    color: yellow;
 }
 
 .red {
@@ -18,10 +19,12 @@ body {
 
 .blue {
     background-color: blue;
+    color: blue;
 }
 
 .orange {
     background-color: orange;
+    color: orange;
 }
 
 .zonk {
@@ -32,18 +35,22 @@ body {
 
 .green {
     background-color: green;
+    color: green;
 }
 
 .white {
     background-color: white;
+    color: white;
 }
 
 .grey {
     background-color: grey;
+    color: grey;
 }
 
 .smth {
      background-color: #507DBC;
+     color: #507DBC;
 }
 
 .bg-footer {
@@ -57,24 +64,28 @@ body {
 }
 
 .bg-drk {
-    background-color: #283044 ;
+    background-color: #283044;
     color: whitesmoke !important;
 }
 
 .dark {
-     background-color: #283044 ;
+     background-color: #283044;
+     color: #283044;
 }
 
 .black {
     background-color: black;
+    color: black;
 }
 
 .pink {
     background-color: pink;
+    color: pink;
 }
 
 .light {
     background-color:chartreuse;
+    color:chartreuse;
 }
 
 .txt-black {
@@ -88,6 +99,10 @@ body {
 
 .unwiped{
    animation: wipe 0.7s linear ;
+}
+
+.btn {
+    color: inherit;
 }
 
 @keyframes wipe {

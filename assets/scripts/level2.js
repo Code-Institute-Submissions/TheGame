@@ -3,7 +3,7 @@
     
 
         
-        alert("Congrats! Now you know how to play!")
+        alert("Are you ready for the real challenge?")
               
         
         location.replace("level2.html")

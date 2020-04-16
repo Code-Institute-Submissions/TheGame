@@ -1,41 +1,6 @@
 $(document).ready(function(){     
 
-    // var selected = $(".selected").length;
-    // var clr  = $(".red .blue .yellow .white").length;
-
-    
-    //     $(".toRed").on("click", function(){
-            
-    //         $.when(
-
-    //          $(this).toggleClass("red selected")
-
-    //         ).then( function check(){
-
-    //      if ((clr != 2)&&(selected == 2)) {
-                
-    //              setTimeout(function(){
-    //                      $(".selected").removeClass("red blue green yellow white orange grey selected")
-    //                 },800); 
-    //         } else if((clr == 2)&&(selected == 2)){
-    //              setTimeout(function(){
-                         
-    //                  $(".red").addClass("unwiped")
-    //                  $(".red").delay(800).addClass("wiped") 
-    //                 },1000); 
-    //         } else {
-    //             console.log("Think more Stan!");
-    //         };
-    //     })
-
-    //     });
-
-    //       $(".toBlue").on("click", function(){
-
-    //          $(this).toggleClass("blue selected")
-    //       })
-
-     
+        
         $(".toRed").on("click", function(){
              $(this).toggleClass("red selected").text(" ")
 
@@ -86,7 +51,7 @@ $(document).ready(function(){
         });
 
          $(".toZonk").on("click", function(){
-            $(this).toggleClass("zonk selected").text("nothing's here")
+            $(this).toggleClass("zonk ").text("nothing's here")
             $(this).delay(2000).addClass("unwiped")    
             $(this).delay(1000).addClass("wiped")
              return toCheck();
@@ -124,7 +89,7 @@ $(document).ready(function(){
                if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))){
 
                 $(".grey").addClass("unwiped")
-                $(".grey").delay(800).addClass("wiped") 
+                $(".grey").delay(800).addClass("wiped").addClass("disabled")
             } ;
              
              return toCheck();

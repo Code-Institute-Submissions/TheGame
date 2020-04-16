@@ -53,7 +53,8 @@
         });
 
          $(".toZonk").on("click", function(){
-            $(this).toggleClass("zonk selected").text("nothing's here")
+            $(this).toggleClass("zonk ").text("nothing's here")
+            
             $(this).delay(2000).addClass("unwiped")    
             $(this).delay(1000).addClass("wiped")
              return toCheck();

@@ -53,51 +53,13 @@
         });
 
          $(".toZonk").on("click", function(){
-            $(this).toggleClass("zonk selected").text("nothing's here")
+            $(this).toggleClass("zonk").text("nothing's here")
             $(this).delay(3000).addClass("unwiped")    
             $(this).delay(1000).addClass("wiped")
              return toCheck();
         });
 
     
-
-        //  $(".toWhite").on("click", function(){
-        //     $(this).toggleClass("white selected").text(" ")
-
-        //        if (($("#toWhite1").hasClass("white")) && ($("#toWhite2").hasClass("white"))){
-
-        //         $(".white").addClass("unwiped")
-        //         $(".white").delay(800).addClass("wiped") 
-        //     };     
-        //        return toCheck();
-
-        // });
-
-        //  $(".toYellow").on("click", function(){
-        //     $(this).toggleClass("yellow selected").text(" ")
-            
-        //        if (($("#toYellow1").hasClass("yellow")) && ($("#toYellow2").hasClass("yellow"))){
-
-        //         $(".yellow").addClass("unwiped")
-        //         $(".yellow").delay(800).addClass("wiped") 
-        //     };  
-        //      return toCheck();
-        // });
-
-
-        //  $(".toGrey").on("click", function(){
-        //     $(this).toggleClass("grey selected")
-          
-        //        if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))){
-
-        //         $(".grey").addClass("unwiped")
-        //         $(".grey").delay(800).addClass("wiped") 
-        //         $(".grey").delay(500).addClass("disabled")
-        //     } ;
-             
-        //      return toCheck();
-
-        // });
 
          function toCheck(selected, wiped){
 

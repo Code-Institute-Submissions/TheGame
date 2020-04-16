@@ -58,7 +58,7 @@ body {
 
 .bg-drk {
     background-color: #283044 ;
-    color: whitesmoke;
+    color: whitesmoke !important;
 }
 
 .dark {
@@ -75,6 +75,10 @@ body {
 
 .light {
     background-color:chartreuse;
+}
+
+.txt-black {
+    color: black;
 }
 
 .wiped {

@@ -4,7 +4,7 @@
     
 
         
-        alert("You are AWESOME!")
+        alert("You earned 15 points!!")
               
         
         location.replace("level3.html")
@@ -17,7 +17,7 @@
     
 
         
-        alert(" Congratulations, you just finished the game!")
+        alert(" Congratulations, you scored 39 points and finished the game!! We hope to see you again soon.")
               
         
         location.replace("index.html")

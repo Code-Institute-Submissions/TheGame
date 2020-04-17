@@ -1,219 +1,226 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /* --------------------------------------------------color---- */
+
 body {
-    font-family: 'Lobster', cursive;
-    background-color: #bce0f8;
-    color: black;
+	font-family: 'Lobster', cursive;
+	background-color: #bce0f8;
+	color: black;
 }
 
 .yellow {
-    background-color: yellow;
-    color: yellow;
+	background-color: yellow;
+	color: yellow;
 }
 
 .red {
-    background-color: red;
-    color: red;
+	background-color: red;
+	color: red;
 }
 
 .blue {
-    background-color: blue;
-    color: blue;
+	background-color: blue;
+	color: blue;
 }
 
 .orange {
-    background-color: orange;
-    color: orange;
+	background-color: orange;
+	color: orange;
 }
 
 .zonk {
-    color: whitesmoke;
-    background-color: black;
-    padding-top: 1%;
+	color: whitesmoke;
+	background-color: black;
+	padding-top: 1%;
 }
 
 .green {
-    background-color: green;
-    color: green;
+	background-color: green;
+	color: green;
 }
 
 .white {
-    background-color: white;
-    color: white;
+	background-color: white;
+	color: white;
 }
 
 .grey {
-    background-color: grey;
-    color: grey;
+	background-color: grey;
+	color: grey;
 }
 
 .smth {
-     background-color: #507DBC;
-     color: #507DBC;
+	background-color: #507DBC;
+	color: #507DBC;
 }
 
 .bg-footer {
-    background-color: #507DBC;
-    color: whitesmoke;
+	background-color: #507DBC;
+	color: whitesmoke;
 }
 
 .bg-table {
-    background-color: #A1C6EA;
-    color: whitesmoke;
+	background-color: #A1C6EA;
+	color: whitesmoke;
 }
 
 .bg-drk {
-    background-color: #283044;
-    color: whitesmoke !important;
+	background-color: #283044;
+	color: whitesmoke !important;
 }
 
 .dark {
-     background-color: #283044;
-     color: #283044;
+	background-color: #283044;
+	color: #283044;
 }
 
 .black {
-    background-color: black;
-    color: black;
+	background-color: black;
+	color: black;
 }
 
 .pink {
-    background-color: pink;
-    color: pink;
+	background-color: pink;
+	color: pink;
 }
 
 .light {
-    background-color:chartreuse;
-    color:chartreuse;
+	background-color: chartreuse;
+	color: chartreuse;
 }
 
 .txt-black {
-    color: black;
+	color: black;
 }
 
 .wiped {
-    
-    opacity: 0;
+	opacity: 0;
 }
 
-.unwiped{
-   animation: wipe 0.7s linear ;
+.unwiped {
+	animation: wipe 0.7s linear;
 }
 
 .btn {
-    color: inherit;
+	color: inherit;
 }
 
 @keyframes wipe {
-  0%   { opacity: 1; }  
-  100% { opacity: 0; }
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
+
 
 /* -----------------------------------------------------style */
 
 .high {
-    min-height: 80px;
-    object-fit:cover;
+	min-height: 80px;
+	object-fit: cover;
 }
 
 footer {
-    padding-top: 5%;
+	padding-top: 5%;
 }
 
 .right {
-    float: right;
+	float: right;
 }
 
 .center {
-    text-align: center;
-    object-position: center;
+	text-align: center;
+	object-position: center;
 }
 
 .disabled {
-    display: none;
+	display: none;
 }
 
 .padding {
-    padding-top: 10%;
+	padding-top: 10%;
 }
 
 .padding-bottom {
-    padding-bottom: 5%;
+	padding-bottom: 5%;
 }
 
 .large {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 .wide {
-    width: 100%;
+	width: 100%;
 }
 
 .right {
-   text-align: right;
+	text-align: right;
 }
 
 #success {
-    font-size: 30px;
-    letter-spacing: 2px;
+	font-size: 30px;
+	letter-spacing: 2px;
 }
 
 .space {
-    letter-spacing: 2px;
+	letter-spacing: 2px;
 }
+
 
 /* --------------------------------------------------------- First level-- */
 
 .table {
-    height: 100%;
-    padding: 8% 10% 5%;
-    margin: 0;
-    text-align: center;
+	height: 100%;
+	padding: 8% 10% 5%;
+	margin: 0;
+	text-align: center;
 }
 
-.equal-first {    
-    border: 2px solid  black ;
-
+.equal-first {
+	border: 2px solid black;
 }
+
 
 /* ----------------------------------------------------------Footer  */
+
+
 /* ------------------------While creating the footer, I was inspired by our course materials */
 
 footer {
-    position: static;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 2%;
+	position: static;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 2%;
 }
 
 i {
-    text-decoration: none;
+	text-decoration: none;
 }
-.social i {
-    font-size: 24px;
-    color: #fafafa;
-    text-align: center;
-    padding: 15px;
 
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+.social i {
+	font-size: 24px;
+	color: #fafafa;
+	text-align: center;
+	padding: 15px;
+	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
 }
 
 .social i:hover {
-    
-    color: #0A122A;
-    font-size: 30px;
+	color: #0A122A;
+	font-size: 30px;
 }
+
 
 /* ----------------------------------------------------------Contact  */
 
 .contact-form {
-    padding: 10%;
-    max-width: 80%;
+	padding: 10%;
+	max-width: 80%;
 }
-

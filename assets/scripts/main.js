@@ -11,8 +11,8 @@
                 $(".red").addClass("unwiped")
                 $(".red").delay(800).addClass("wiped")
                  setTimeout(function(){
-                         $(this).addClass("disabled")
-                    },1000);
+                         $(".red").addClass("disabled")
+                    },300);
             };  
              return toCheck();
         });
@@ -27,8 +27,8 @@
                 $(".blue").addClass("unwiped")
                 $(".blue").delay(800).addClass("wiped")
                 setTimeout(function(){
-                         $(this).addClass("disabled")
-                    },1000);
+                         $(".blue").addClass("disabled")
+                    },300);
             };    
              return toCheck();
         });
@@ -42,8 +42,8 @@
                $(".green").addClass("unwiped")
                $(".green").delay(800).addClass("wiped")
                setTimeout(function(){
-                         $(this).addClass("disabled")
-                    },1000);
+                         $(".green").addClass("disabled")
+                    },300);
             };
             
              return toCheck();
@@ -58,8 +58,8 @@
                 $(".orange").addClass("unwiped")
                 $(".orange").delay(800).addClass("wiped")
                 setTimeout(function(){
-                         $(this).addClass("disabled")
-                    },1000);
+                         $(".orange").addClass("disabled")
+                    },500);
             };     
              return toCheck();   
         });
@@ -69,8 +69,8 @@
             $(this).delay(4000).addClass("unwiped").delay(1000)    
             $(this).delay(1000).addClass("wiped")
              setTimeout(function(){
-                         $(this).addClass("disabled")
-                    },1000); 
+                         $(".zonk").addClass("disabled")
+                    },500); 
            
              return toCheck();
         });

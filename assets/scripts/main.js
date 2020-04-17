@@ -192,7 +192,6 @@
                 };
 //Once we paired all the tiles, we want this function to show us the button, that allow us to go to next level
                  var wiped = $(".wiped").length;
-                 var location = $("#home")
 
                if(($("#home").hasClass("active"))&&(wiped == 9)){
                     setTimeout(function(){
@@ -220,6 +219,7 @@
 // Check time function is the idea of my friend Jack, who was the first person to check if he likes my app.
 // While creating it, I was following the tutorial found on Youtube at: https://www.youtube.com/watch?v=knbUg0Q3qLU
         
+            
  }) 
 
 

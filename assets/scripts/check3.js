@@ -1,13 +1,18 @@
-$(document).ready(function(){     
 
-        
+   $(document).ready(function(){       
+      
+  
+     
         $(".toRed").on("click", function(){
-             $(this).toggleClass("red selected").text(" ")
+             $(this).toggleClass("red selected")
 
               if (($("#toRed1").hasClass("red")) && ($("#toRed2").hasClass("red"))){
 
                 $(".red").addClass("unwiped")
-                $(".red").delay(800).addClass("wiped") 
+                $(".red").delay(800).addClass("wiped")
+                 setTimeout(function(){
+                         $(".red").addClass("disabled")
+                    },300);
             };  
              return toCheck();
         });
@@ -15,24 +20,30 @@ $(document).ready(function(){
         
           $(".toBlue").on("click", function(){
 
-            $(this).toggleClass("blue selected").text(" ")
+            $(this).toggleClass("blue selected")
 
               if (($("#toBlue1").hasClass("blue")) && ($("#toBlue2").hasClass("blue"))){
 
                 $(".blue").addClass("unwiped")
-                $(".blue").delay(800).addClass("wiped") 
+                $(".blue").delay(800).addClass("wiped")
+                setTimeout(function(){
+                         $(".blue").addClass("disabled")
+                    },300);
             };    
              return toCheck();
         });
 
          $(".toGreen").on("click", function(){
             
-           $(this).toggleClass("green selected").text(" ")
+           $(this).toggleClass("green selected")
 
             if (($("#toGreen1").hasClass("green")) && ($("#toGreen2").hasClass("green"))){
 
                $(".green").addClass("unwiped")
-               $(".green").delay(800).addClass("wiped") 
+               $(".green").delay(800).addClass("wiped")
+               setTimeout(function(){
+                         $(".green").addClass("disabled")
+                    },300);
             };
             
              return toCheck();
@@ -40,20 +51,27 @@ $(document).ready(function(){
 
 
          $(".toOrange").on("click", function(){
-             $(this).toggleClass("orange selected").text(" ")
+             $(this).toggleClass("orange selected")
 
               if (($("#toOrange1").hasClass("orange")) && ($("#toOrange2").hasClass("orange"))){
 
                 $(".orange").addClass("unwiped")
-                $(".orange").delay(800).addClass("wiped") 
+                $(".orange").delay(800).addClass("wiped")
+                setTimeout(function(){
+                         $(".orange").addClass("disabled")
+                    },500);
             };     
              return toCheck();   
         });
 
          $(".toZonk").on("click", function(){
-            $(this).toggleClass("zonk ").text("nothing's here")
-            $(this).delay(2000).addClass("unwiped")    
+            $(this).toggleClass("zonk").text("nothing's here")            
+            $(this).delay(4000).addClass("unwiped").delay(1000)    
             $(this).delay(1000).addClass("wiped")
+             setTimeout(function(){
+                         $(".zonk").addClass("disabled")
+                    },500); 
+           
              return toCheck();
         });
 
@@ -159,6 +177,7 @@ $(document).ready(function(){
 
         });
 
+// First part of the toCheck function is supposed to check for us if we matched the pair of tiles, and "flip it" back if we didn't
 
          function toCheck(selected, wiped){
 
@@ -171,20 +190,33 @@ $(document).ready(function(){
                     },400); 
                    
                 };
-
+//Once we paired all the tiles, we want this function to show us the button, that allow us to go to next level
                  var wiped = $(".wiped").length
 
-               if(wiped == 24){
+               if((location == "index.html")&&(wiped == 9)){
                     setTimeout(function(){
                         $("#welcome").addClass("disabled")
                         $("#theGame").addClass("disabled")
                         $("#Complete").removeClass("disabled");
                     },700); 
-                    
-                } ;
-            }
+                }else if ((location == "level3.html")&&(wiped == 24)){
+                     setTimeout(function(){
+                        $("#welcome").addClass("disabled")
+                        $("#theGame").addClass("disabled")
+                        $("#Complete").removeClass("disabled");
+                    },700); 
+                }else if ((location == "level2.html")&&(wiped == 15)){
+                     setTimeout(function(){
+                         alert(`Your time was `)
+                        $("#welcome").addClass("disabled")
+                        $("#theGame").addClass("disabled")
+                        $("#Complete").removeClass("disabled");
+                    },700); 
+                }
+            };
            
-
+// Check time function is the idea of my friend Jack, who was the first person to check if he likes my app.
+// While creating it, I was following the tutorial found on Youtube at: https://www.youtube.com/watch?v=knbUg0Q3qLU
         
  }) 
 

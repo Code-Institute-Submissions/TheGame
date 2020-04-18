@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-     
 
 	$(".toRed").on("click", function () {
 		$(this).toggleClass("red selected").text("???")
@@ -81,8 +80,8 @@ $(document).ready(function () {
 		if (($("#toWhite1").hasClass("white")) && ($("#toWhite2").hasClass("white"))) {
 
 			$(".white").addClass("unwiped")
-            $(".white").delay(800).addClass("wiped")
-            setTimeout(function () {
+			$(".white").delay(800).addClass("wiped")
+			setTimeout(function () {
 				$(".white").addClass("disabled")
 			}, 300);
 		};
@@ -91,13 +90,13 @@ $(document).ready(function () {
 	});
 
 	$(".toYellow").on("click", function () {
-        $(this).toggleClass("yellow selected").text("???")
-        
+		$(this).toggleClass("yellow selected").text("???")
+
 		if (($("#toYellow1").hasClass("yellow")) && ($("#toYellow2").hasClass("yellow"))) {
 
 			$(".yellow").addClass("unwiped")
-            $(".yellow").delay(800).addClass("wiped")
-            setTimeout(function () {
+			$(".yellow").delay(800).addClass("wiped")
+			setTimeout(function () {
 				$(".yellow").addClass("disabled")
 			}, 300);
 		};
@@ -111,8 +110,8 @@ $(document).ready(function () {
 		if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))) {
 
 			$(".grey").addClass("unwiped")
-            $(".grey").delay(800).addClass("wiped").addClass("disabled")
-            setTimeout(function () {
+			$(".grey").delay(800).addClass("wiped").addClass("disabled")
+			setTimeout(function () {
 				$(".grey").addClass("disabled")
 			}, 300);
 		};
@@ -127,8 +126,8 @@ $(document).ready(function () {
 		if (($("#toDark1").hasClass("dark")) && ($("#toDark2").hasClass("dark"))) {
 
 			$(".dark").addClass("unwiped")
-            $(".dark").delay(800).addClass("wiped")
-            setTimeout(function () {
+			$(".dark").delay(800).addClass("wiped")
+			setTimeout(function () {
 				$(".dark").addClass("disabled")
 			}, 300);
 		};
@@ -142,8 +141,8 @@ $(document).ready(function () {
 		if (($("#toBlack1").hasClass("black")) && ($("#toBlack2").hasClass("black"))) {
 
 			$(".black").addClass("unwiped")
-            $(".black").delay(800).addClass("wiped")
-            setTimeout(function () {
+			$(".black").delay(800).addClass("wiped")
+			setTimeout(function () {
 				$(".black").addClass("disabled")
 			}, 300);
 		};
@@ -158,8 +157,8 @@ $(document).ready(function () {
 		if (($("#toPink1").hasClass("pink")) && ($("#toPink2").hasClass("pink"))) {
 
 			$(".pink").addClass("unwiped")
-            $(".pink").delay(800).addClass("wiped")
-            setTimeout(function () {
+			$(".pink").delay(800).addClass("wiped")
+			setTimeout(function () {
 				$(".pink").addClass("disabled")
 			}, 300);
 		};
@@ -173,8 +172,8 @@ $(document).ready(function () {
 		if (($("#toLight1").hasClass("light")) && ($("#toLight2").hasClass("light"))) {
 
 			$(".light").addClass("unwiped")
-            $(".light").delay(800).addClass("wiped")
-            setTimeout(function () {
+			$(".light").delay(800).addClass("wiped")
+			setTimeout(function () {
 				$(".light").addClass("disabled")
 			}, 300);
 		};
@@ -189,8 +188,8 @@ $(document).ready(function () {
 		if (($("#toSmth1").hasClass("smth")) && ($("#toSmth2").hasClass("smth"))) {
 
 			$(".smth").addClass("unwiped")
-            $(".smth").delay(800).addClass("wiped")
-            setTimeout(function () {
+			$(".smth").delay(800).addClass("wiped")
+			setTimeout(function () {
 				$(".smth").addClass("disabled")
 			}, 300);
 		};
@@ -200,14 +199,13 @@ $(document).ready(function () {
 	});
 
 	// First part of the toCheck function is supposed to check for us if we matched the pair of tiles, and "flip it" back if we didn't
-   
-        var startTime = new Date();
 
-       
+	var startTime = new Date();
+
 
 	function toCheck(selected, wiped) {
 
-       
+
 		var selected = $(".selected").length;
 		var color = $(".red .blue .green .yellow .white .orange .grey .dark .light .smth .black .pink ").length;
 
@@ -222,26 +220,31 @@ $(document).ready(function () {
 
 		if (($("#home").hasClass("active")) && (wiped == 9)) {
 
-            var endTime = new Date() - startTime; 
-   
+			var endTime = new Date() - startTime;
+
 			setTimeout(function () {
-                alert("You are great!  Your time was: "+ (endTime/1000) + " seconds")
+				alert("You are great!  Your time was: " + (endTime / 1000) + " seconds")
 				$("#welcome").addClass("disabled")
 				$("#theGame").addClass("disabled")
 				$("#Complete").removeClass("disabled");
 			}, 700);
 		} else if ($("#level2").hasClass("active") && (wiped == 15)) {
-             var endTime = new Date() - startTime;
-			setTimeout(function () {
-                alert("You earned 15 points! " +" Your time was: "+ (endTime/1000) + " seconds")
+
+			var endTime = new Date() - startTime;
+            
+            setTimeout(function () {
+				alert("You earned 15 points!   Your time was: " + (endTime / 1000) + " seconds")
 				$("#welcome").addClass("disabled")
 				$("#theGame").addClass("disabled")
 				$("#Complete").removeClass("disabled");
-			}, 700)
+            }, 700)
+            
 		} else if (($("#level3").hasClass("active")) && (wiped == 24)) {
-			 var endTime = new Date() - startTime;
+
+            var endTime = new Date() - startTime;
+            
 			setTimeout(function () {
-                alert("You earned 39 points!   Your time was: "+ (endTime/1000) + " seconds")
+				alert("You earned 39 points!   Your time was: " + (endTime / 1000) + " seconds")
 				$("#welcome").addClass("disabled")
 				$("#theGame").addClass("disabled")
 				$("#Complete").removeClass("disabled");
@@ -251,6 +254,5 @@ $(document).ready(function () {
 
 	// Check time function is the idea of my friend Jack, who was the first person to check if he likes my app.
 	// While creating it, I was inspired by the tutorial found on Youtube at: https://www.youtube.com/watch?v=knbUg0Q3qLU
-
 
 })

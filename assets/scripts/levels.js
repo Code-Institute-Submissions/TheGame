@@ -1,18 +1,12 @@
 function level2(success) {
 
 
-	
-
-
 	location.replace("level2.html")
 
 
 }
 
 function level3(success) {
-
-
-	
 
 
 	location.replace("level3.html")

@@ -1,5 +1,7 @@
 $(document).ready(function () {
-
+//Section of onClick functions, that recognize users actions and change colors of the tiles after click, 
+// turning them back to neutral after no match is found, or disappearing them if they match.
+// Timeout function, that is hiding the Tiles after they disappear is an effect of manual tests made by my friends (and their feedback.)
 
 	$(".toRed").on("click", function () {
 		$(this).toggleClass("red selected").text("???")
@@ -57,7 +59,7 @@ $(document).ready(function () {
 			$(".orange").delay(800).addClass("wiped")
 			setTimeout(function () {
 				$(".orange").addClass("disabled")
-			}, 500);
+			}, 300);
 		};
 		return toCheck();
 	});

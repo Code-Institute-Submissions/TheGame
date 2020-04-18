@@ -1,7 +1,7 @@
-# TheGame
+# *TheGame*
 ### The Second Milestone project by Stan Kaczorkiewicz
 
-This is my second project as part of the Software Development Course by Code Institute.
+This is my second project as part of the Software Development Course by **Code Institute**.
 Main first idea regarding to the Milestone project was totally different. 
 I started creating website, thet was meant to present beauty of Tatry Mountains to English-speaking world 
 (and to show some of my great pictures, taken there). During the process of creations, however, 
@@ -19,15 +19,45 @@ I decided to leave it here, as it looks much nicer with three links, and I dont 
 The reason behind TheGame from the user perspective, wes to have a bit of mental excersize, 
 or just some entertainment while sitting home because of the lockdown.
 
-##UX
+## UX
 
-While creating TheGame, I wanted to make interactive, intuitive, user-friendly website,
-that will entertain users in this difficult time.
-To make it intuitive, I used Bootstrap tools, and 
+While creating *TheGame*, I wanted to make interactive, intuitive, user-friendly website,
+that will entertain users in this difficult time.To make it intuitive, I used Bootstrap tools, and 
 I choose light-blue colors, as it has positive and calming conotations.
 
-My first Idea of the look of my page is [here](assets/images/firstPage.jpg) and [here](assets/images/secondPage.png).
-I've decided it will be nicer to keep it all the time in 3-columns order,
-also the first page looks better, in my opinion, with three rows instead of two, as it was in my first Idea.
+My first idea of the look of *TheGame* can be seen [here](assets/images/firstPage.jpg) and [here](assets/images/secondPage.png).
+Then I've decided it will be nicer to keep it all the time in 3-columns order,
+also the first page looks better, in my opinion, with three rows instead of two, as it was firstly.
 
-Difficulty of the game is increased with every level
+I identified a user as a random person from long list of my Facebook friends.
+As an effect of that, I kept all texts on the website to the minimum, 
+as it's designed to be useful for people raised in various cultures and speaking various languages.
+Also the colors are easy to identify, and most of the game is self-explaining.
+
+# Features
+
+## Existing Features:
+
+### Navigation 
+Based on the tools provided by bootstrap, provides user with a chanse to come back 
+to the home page at any stage, or to contact page, to be in touch with me if they wish. 
+Navigation also provides an access to every other level, if user will "unclick" the "disabled" class in it.
+I was using that option while creating the website and found it very useful, so I decided to leave it for future use. 
+
+### Footer with social links
+Fake quotes are intended to make users day a little bit brighter and to turn their attention away from our current situation on the world.
+Social links will allow user to contact me on facebook, see my photos on Instagram,
+or to see some beautiful pictures of __*Tatry mountains*__ on my miss Pinterest, as I mentioned above.
+
+### Three levels of the Game
+Will provide user with an occasion to kill some time, while self- isolating.
+Increasing level of difficulty is making *TheGame* more attractive (at least in my opinion).
+
+### Time counting function
+This is the idea that I implemented as the last one, after comments made by my friend.
+He said he would like to know that and I found it as a really good feature, that adds some element of competition to it.
+
+### Tiles shifting their position
+It makes TheGame a bit more challenging for players on the large screen, but also easier to scroll through 
+for mobile players (as I'm assuming most people are using their Facebook on smartphones, 
+so this is where they will use *TheGame* as well, if I will make it public).

@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+     
 
 	$(".toRed").on("click", function () {
 		$(this).toggleClass("red selected")
@@ -175,9 +176,14 @@ $(document).ready(function () {
 	});
 
 	// First part of the toCheck function is supposed to check for us if we matched the pair of tiles, and "flip it" back if we didn't
+   
+        var startTime = new Date();
+
+       
 
 	function toCheck(selected, wiped) {
 
+       
 		var selected = $(".selected").length;
 		var color = $(".red .blue .green .yellow .white .orange .grey .dark .light .smth .black .pink ").length;
 
@@ -191,21 +197,27 @@ $(document).ready(function () {
 		var wiped = $(".wiped").length;
 
 		if (($("#home").hasClass("active")) && (wiped == 9)) {
+
+            var endTime = new Date() - startTime; 
+   
 			setTimeout(function () {
+                alert("Your time was: "+ (endTime/1000) + " seconds")
 				$("#welcome").addClass("disabled")
 				$("#theGame").addClass("disabled")
 				$("#Complete").removeClass("disabled");
 			}, 700);
 		} else if ($("#level2").hasClass("active") && (wiped == 15)) {
+             var endTime = new Date() - startTime;
 			setTimeout(function () {
-
+                alert("Your time was: "+ (endTime/1000) + " seconds")
 				$("#welcome").addClass("disabled")
 				$("#theGame").addClass("disabled")
 				$("#Complete").removeClass("disabled");
 			}, 700)
 		} else if (($("#level3").hasClass("active")) && (wiped == 24)) {
-			alert(`Your time was: `)
+			 var endTime = new Date() - startTime;
 			setTimeout(function () {
+                alert("Your time was: "+ (endTime/1000) + " seconds")
 				$("#welcome").addClass("disabled")
 				$("#theGame").addClass("disabled")
 				$("#Complete").removeClass("disabled");

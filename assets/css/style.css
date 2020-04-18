@@ -98,7 +98,7 @@ body {
 }
 
 .unwiped {
-	animation: wipe 0.7s linear;
+	animation: wipe 0.8s linear;
 }
 
 .btn {

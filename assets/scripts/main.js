@@ -1,7 +1,8 @@
 $(document).ready(function () {
 //Section of onClick functions, that recognize users actions and change colors of the tiles after click, 
 // turning them back to neutral after no match is found, or disappearing them if they match.
-// Timeout function, that is hiding the Tiles after they disappear is an effect of manual tests made by my friends (and their feedback.)
+// Timeout function, that is hiding the Tiles after they disappear is an effect of
+//  manual tests made by my friends, that was first users, and their feedback.
 
 	$(".toRed").on("click", function () {
 		$(this).toggleClass("red selected").text("???")
@@ -203,6 +204,8 @@ $(document).ready(function () {
 	// First part of the toCheck function is supposed to check for us if we matched the pair of tiles, and "flip it" back if we didn't
 
 	var startTime = new Date();
+	// Check time function is the idea of my friend Jack, who was the first person to see if he likes my app.
+	// While creating it, I was inspired by the tutorial found on Youtube at: https://www.youtube.com/watch?v=knbUg0Q3qLU
 
 
 	function toCheck(selected, wiped) {
@@ -254,7 +257,5 @@ $(document).ready(function () {
 		}
 	};
 
-	// Check time function is the idea of my friend Jack, who was the first person to check if he likes my app.
-	// While creating it, I was inspired by the tutorial found on Youtube at: https://www.youtube.com/watch?v=knbUg0Q3qLU
 
 })

@@ -95,7 +95,7 @@ so the players could stay more emotionally attached to *TheGame*.
     and to make every page responsive;
 - JavaScript to add functionality and logic;
 - jQuery for finding elements in the DOM three;
-- GitPod provides me an enviroment where I've been working;
+- GitPod provides me an enviroment where I've been working, also providing version control.
 - FontAwesome to provide icons;
 - Google Fonts for that fancy font I'm using for every bit of text;
 - [W3C validator](https://validator.w3.org/) To validate HTML and CSS;
@@ -161,6 +161,21 @@ and I can not afford any unnecessary expenses in this difficult time of global p
 
 # Credits 
 In a part of this project, I was following some materials provided in our course at Code Institute. 
+While creating the footer, I was inspired by the "Rosie Odenkirk" mini project.
+The idea for contact form comes from "Love running" project, 
+but behind idea of its JavaScript stands also the project mentioned above.
 
+Set of colors was choosen from coolors.co
 
+As I mentioned in the comment under that, while creating the time checking function,
+I was inspired by the tutorial found on Youtube at: https://www.youtube.com/watch?v=knbUg0Q3qLU
 
+# Acknowledgement 
+
+I would like to say thank you to some of the students of Code Institute, that answered to my message on Slack
+and helped me to understand what am I doing wrong, when some of my functions did not work.
+I'm grateful spacialy for __Igor B__ and __mr_bim_alumni__ as they gave me hand in the darkest hour of the project.
+
+I also would like to mention a bit of help from my mentor's, Reuben Ferrante, side.
+Despite being on holiday, he gave me some constructive critique and pointed out a few things that needed changing, 
+in a moment when I already thought my project is ready to be submitted.

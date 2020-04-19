@@ -117,7 +117,7 @@ when I realized that I spent the whole evening trying to figure it out myself, i
 - [GitHub](https://github.com/MrColorado35/TheGame) allowed me to store my files and to deploy my page for free;
 - Developer Tools (build-in feature of Google Chrome), that allowed me to instantly apply all the changes I intened to make 
 and to see their effects (or lack of effect in many cases) immediately.
-- [jshint](https://jshint.com/) for final check of my JavaScript (although it does not recognise the jQuery)
+- [jshint](https://jshint.com/) for final, automatic tests of my JavaScript (although it does not recognise the jQuery)
 
 
 # Testing 

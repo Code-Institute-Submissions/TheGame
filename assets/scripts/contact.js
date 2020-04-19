@@ -18,7 +18,7 @@ function sendMail(contactForm) {
 			})
 		.then(
 			function redirect() {
-				location.replace("index.html")
+				location.replace("index.html");
 			});
 
 	return false; // To block from loading a new page

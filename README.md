@@ -117,6 +117,7 @@ when I realized that I spent the whole evening trying to figure it out myself, i
 - [GitHub](https://github.com/MrColorado35/TheGame) allowed me to store my files and to deploy my page for free;
 - Developer Tools (build-in feature of Google Chrome), that allowed me to instantly apply all the changes I intened to make 
 and to see their effects (or lack of effect in many cases) immediately.
+- [jshint](https://jshint.com/) for final check of my JavaScript (although it does not recognise the jQuery)
 
 
 # Testing 
@@ -178,7 +179,8 @@ and I can not afford any unnecessary expenses in this difficult time of global p
 In a part of this project, I was following some materials provided in our course at Code Institute. <br>
 While creating the footer, I was inspired by the "Rosie Odenkirk" mini project.
 The idea for contact form comes from "Love running" project, 
-but behind idea of its JavaScript stands also the project mentioned above.
+but behind idea of its JavaScript stands also the project mentioned above, although to my best memory, 
+the redirect function is of my own idea.
 
 Set of colors was choosen from coolors.co
 

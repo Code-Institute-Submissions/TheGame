@@ -1,7 +1,7 @@
 # *TheGame*
 ### The Second Milestone project by Stan Kaczorkiewicz
 
-This is my second project as part of the Software Development Course by **Code Institute**.
+This is my second project as part of the Software Development Course by **Code Institute**, the first one involving JavaScript.
 Main first idea regarding to the Milestone project was totally different. 
 I started creating website, thet was meant to present beauty of Tatry Mountains to English-speaking world 
 (and to show some of my great pictures, taken there). During the process of creations, however, 
@@ -112,18 +112,55 @@ and to see their effects (or lack of effect in many cases) immediately.
 # Testing 
 
 The process of creation of *TheGame* required me to constantly test every new bit of functionality I was going to add.
-To be honest, I think that out of 25-ish hours, that I've spent over this app, most of them was spend over the manual testing,
+To be honest, I think that more that half of the time, that I've spent over this app, was spend on the manual testing,
 over and over again.
+
+Most of the tests, was performed in Dev Tools, or in Gitpod itself. While testing, I learned to only test one part of the code at a time,
+as my first idea, of testing whole parts of code not only did not work, but also made it more complicated to find the bugs.
+The final part of the test, was to send app to few friends of mine and asking them to play and send me some feedback.
+As mentioned above, one of the effects of that was a time-measure function, that gives a user an idea of how good they were.
 
 I must confess, that despite my previous attitude, that I will describe them on the end of the project, 
 I cannot remember many of them.
 That's another thing that I learned thanks to this project-  the importance of README and habit of noting all the tests straight away.
 Now I can only look at the history of my git commits and scratch my head, trying to understand "past-me".
 
-I remember that the biggest issue I had with "flipping" the tiles back to the neutral position, 
+I remember that the biggest issue I had while creating *TheGame* was "flipping" the tiles back to the neutral position, 
 when the user did not match two of them. After few helpful answers to my call on the Slack, and a lot of googling,
 I finally managed to get it done. I belive my commit comment shows a bit of relief I felt that day.
 
+Another bit that I was testing a lot for, was to create a function, that will match two pieces of the same color,
+without using IDs. My idea was to only use classes, so I don't have to create more and more HTML files 
+and give every single Tile an unique ID.
+It took me more than a day, to realise that it is not possible, with my current level of knowledge.
+This is a subject of my ambition, that once I'm not under the strict time pressure, I will find the way to do it.
+
+One of the issues I found in the latest phase of testing, was that I forgot to copy one _script_ tag, 
+what stopped the contact form from functioning.
+Other issue, more aestetical than functioning really, was that after I implemented the Time Check function, 
+there was two alerts, one after another, that could be annoying. I decided to keep both, 
+score/ motivational message and the time in one alert, to create nicer User Experience.
+
+# Deployment
+
+As I constantly worked in GitPod, the process of deployment my app on GitHub was almost automatic.
+All the problems I experienced, while deploying my previous project, tought me where to look for the issues if I can't do it.
+That's how I knew what format files to avoid and how to look for the bugs at the first place, if it does not work.
+This time all I had to do was to make sure that I selected "master" branch in settings tab on the
+[GitHub](https://github.com/MrColorado35/TheGame) website, avoid formats, that GitHub cannot recognise and 
+then the program did the rest for me.
+
+I pushed my work to GitHub every day, to make sure that deployed version of my website is identical 
+to the code in my browsers GitPod app. 
+**[Live version of my website is available here.](https://mrcolorado35.github.io/TheGame/index.html)**
+I will not change anything for four weeks, beginning on the day I will submit my project, to make sure that my work has been graded
+and I recived feedback for my current knowledge, not anything I will learn after that time.
+
+As for now I'm not planning to deploy the page in any different hosting platform, as it is not intended to bring me any profit,
+and I can not afford any unnecessary expenses in this difficult time of global pandemy.
+
+# Credits 
+In a part of this project, I was following some materials provided in our course at Code Institute. 
 
 
 

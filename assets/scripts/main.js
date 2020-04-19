@@ -113,7 +113,7 @@ $(document).ready(function () {
 		if (($("#toGrey1").hasClass("grey")) && ($("#toGrey2").hasClass("grey"))) {
 
 			$(".grey").addClass("unwiped")
-			$(".grey").delay(800).addClass("wiped").addClass("disabled")
+			$(".grey").delay(800).addClass("wiped")
 			setTimeout(function () {
 				$(".grey").addClass("disabled")
 			}, 300);

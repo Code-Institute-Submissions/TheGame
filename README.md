@@ -8,10 +8,10 @@ to English-speaking world (and to show some of my great pictures, taken there).
 During the process of creating, after over 50 hours spent on it, I've realized that my JavaScript 
 (and, especially outsourced APIs) uderstanding wasn't good enough to perform that task.
 After the moment of panic, when I considered abandoning the whole course, if I can't learn anything here,
-I started new a project, which I have a pleasure to present here.
+I started a new project, which I have a pleasure to present here.
 
-The main purpose of *TheGame*, from my perspective, was to help me to understand how JavaScript works.
-I'm still  far from being perfect at it, but  I'm sure I am in a different place, than I was a week ago.
+The main purpose of *TheGame*, from my perspective, was to help me to understand how JavaScript works and to practice coding in that language.
+I'm still far from being perfect at it, but I'm sure I am in a different place, than I was a week ago.
 <br>As the date of my submission was coming closer, I worked under strong pressure of time.
 I'm quite proud of what I was able to do in such a short time, while still doing my full-time job as a key worker, 
 considering that it's my first project containing custom JavaScript.
@@ -49,14 +49,14 @@ between the million of similar games.
 ## Existing Features:
 
 ### Navigation 
-Based on the tools provided by bootstrap, provides user with a chance to come back 
-to the home page at any stage, or to contact page, to be stay in touch with me if they wish. 
-Navigation also provides an access to every other level, if user will "unclick" the "disabled" class in it.
+Based on the tools provided by bootstrap, navigation provides user with a chance to come back 
+to the home page at any stage of the game, or to contact page, to stay in touch with me if they wish. 
+Navigation also gives an access to every other level, if user will "unclick" the "disabled" class in it.
 I was using that option a lot while creating the website and found it very useful, so I decided to leave it for future use. 
 
 ### Contact form
 If any user would like to contact me, to throw their love or dissapointment in my face, without being recognized
-(The contact form asks for name and email, but does not check if it's the real one).
+(The contact form asks for name and email, but does not check if it's the real one), they have a chance to do so.
 Also if at any point *TheGame* will become popular outside of my Facebook friends, thats the occasion for user to stay in touch.
 
 ### Footer with social links
@@ -84,7 +84,7 @@ that adds an element of competition to *TheGame*.
 
 ### More levels
 As I'm working to a tight schedulde, I was unable to create them by now.
-I would love to make *Thegame* 20+ levels long, but I need to work out how to do it using JavaScript first.
+I would love to make *TheGame* 20+ levels long, but I need to work out how to do it using JavaScript first.
 I wouldn't like to create more and more HTML pages for every level.
 I'm sure it's doable, but to work it out could take me another week or so, and I don't have that much right now, 
 as I'm already running late to submit the project.
@@ -93,19 +93,19 @@ as I'm already running late to submit the project.
 Another good idea, dropped by a friend of mine, that has played *TheGame* as a first user, 
 was that he would like to see his score in a live preview, and be able to compare it to other players.
 I believe that both, live score preview(that could somehow calculate the time and the ammount of matches found)
-and the automaticly given Username could be a nice feature, once there will be more levels, 
+and the automaticaly given Username could be a nice feature, once there will be more levels, 
 so the players could stay more emotionally attached to *TheGame*.
 
 
 # Technologies used:
 
 - HTML5 to structure the page;
-- CSS 3 for adding the style to it;
+- CSS3 for adding the style to it;
 - Bootstrap for navigation and layout of the tiles, 
     and to make every page responsive;
 - JavaScript to add functionality and logic;
 - jQuery for finding elements in the DOM three;
-- GitPod provides me an enviroment where I've been working, also providing version control.
+- GitPod provides me an enviroment where I've been working, also providing version control;
 - FontAwesome to provide icons;
 - Google Fonts for that fancy font I'm using for every bit of text;
 - [W3C validator](https://validator.w3.org/) To validate HTML and CSS;
@@ -116,8 +116,8 @@ when I realized that I spent the whole evening trying to figure it out myself, i
 - [EmailJS](https://www.emailjs.com/) to provide me with the functionality of my Contact Form;
 - [GitHub](https://github.com/MrColorado35/TheGame) allowed me to store my files and to deploy my page for free;
 - Developer Tools (build-in feature of Google Chrome), that allowed me to instantly apply all the changes I intened to make 
-and to see their effects (or lack of effect in many cases) immediately.
-- [jshint](https://jshint.com/) for final, automatic tests of my JavaScript (although it does not recognise the jQuery)
+and to see their effects (or lack of effect in many cases) immediately;
+- [jshint](https://jshint.com/) for final, automatic tests of my JavaScript (although it does not recognise the jQuery);
 
 
 # Testing 

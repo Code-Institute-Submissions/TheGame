@@ -124,7 +124,7 @@ and to see their effects (or lack of effect in many cases) immediately.
 
 The process of creation of *TheGame* required me to constantly test every new bit of functionality I was going to add.
 To be honest, I think that more that half of the time, that I've spent on this app, was spent on the manual testing,
-over and over again.
+over and over again. I also tested how it works on various browsers, such as Chrome, Firefox and Facebook/ Messenger internal browser.
 
 Most of the tests, were performed in Dev Tools, or in Gitpod itself. While testing, I learned to only test one part of the code at a time,
 as my first idea, of testing whole parts of code not only did not work, but also made it more complicated to find the bugs.
